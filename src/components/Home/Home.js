@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import News from '../News/News';
 
-function Home(props) {
-  const {name} = props;
+function Home(userName) {
   return (
   <>
-  <Navbar name={name} />
+  <Navbar userName={userName} />
   <News />
   </>
   )
